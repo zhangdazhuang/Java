@@ -1,6 +1,6 @@
 package SortStrategy;
 
-public class BubbleSorter
+public class BubbleSorter implements Sort
 {
   private int operations = 0;
   private int length = 0;
@@ -27,7 +27,7 @@ public class BubbleSorter
           itsSortHandle.swap(index);
         operations++;
       }
-//cesgdgdf
+
     return operations;
   }
 }
