@@ -1,4 +1,6 @@
-package SortStrategy;
+package SortStrategy.SortImplements;
+
+import SortStrategy.SortInterface.SortHandle;
 
 public class IntSortHandle implements SortHandle
 {
@@ -6,7 +8,6 @@ public class IntSortHandle implements SortHandle
 
   public void swap(int index)
   {
-    // System.out.println(index+"zheshi");
     int temp = array[index];
     array[index] = array[index+1];
     array[index+1] = temp;

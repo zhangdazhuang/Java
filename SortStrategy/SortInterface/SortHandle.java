@@ -1,4 +1,5 @@
-package SortStrategy;
+package SortStrategy.SortInterface;
+
 // 接口，定义排序所需的四种方法
 public interface SortHandle
 {

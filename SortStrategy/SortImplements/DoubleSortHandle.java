@@ -1,6 +1,8 @@
-package SortStrategy;
+package SortStrategy.SortImplements;
 
-public class DoubleBubbleSorter implements SortHandle
+import SortStrategy.SortInterface.SortHandle;
+
+public class DoubleSortHandle implements SortHandle
 {
   private double[] array = null;
 

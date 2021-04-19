@@ -1,4 +1,7 @@
-package SortStrategy;
+package SortStrategy.SortImplements;
+
+import SortStrategy.SortInterface.Sort;
+import SortStrategy.SortInterface.SortHandle;
 
 public class BubbleSorter implements Sort
 {

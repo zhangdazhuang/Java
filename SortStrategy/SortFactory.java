@@ -1,5 +1,8 @@
 package SortStrategy;
 
+import SortStrategy.SortInterface.SortHandle;
+import SortStrategy.SortInterface.Sort;
+
 import java.lang.reflect.Constructor;
 import java.lang.Class;
 public class SortFactory {
@@ -20,9 +23,8 @@ public class SortFactory {
         Sort sort = null;
         try{
             //利用反射实例化对象
-            // sort = (Sort)Class.forName(classname).newInstance();
-            Class cls = Class.forName(classname);
-            Constructor constructor = cls.getConstructor(SortHandle.class);
+            Class<?> cls = Class.forName(classname);
+            Constructor<?> constructor = cls.getConstructor(SortHandle.class);
             sort = (Sort)constructor.newInstance(sorthandle);
         }catch(Exception e){
             e.printStackTrace();
