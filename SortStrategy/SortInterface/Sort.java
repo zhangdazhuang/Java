@@ -1,5 +1,5 @@
 package SortStrategy.SortInterface;
 
 public interface Sort {
-    public int sort(Object array);
+    public void sort(Object array);
 }
